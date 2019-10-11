@@ -32,6 +32,7 @@ public class SendSms {
         request.putQueryParameter("SignName", "Mr.Liu");
         request.putQueryParameter("TemplateCode", "SMS_174272457");
         request.putQueryParameter("TemplateParam","{\"name\":\"用户\"}");
+
         try {
             CommonResponse response = client.getCommonResponse(request);
             System.out.println(response.getData());
